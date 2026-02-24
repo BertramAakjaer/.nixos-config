@@ -19,12 +19,12 @@
               useGlobalPkgs = true;
               useUserPackages = true;
 
-              # extraSpecialArgs = {
-              #   pkgs-unstable = import inputs.nixpkgs-unstable {
-              #     system = "x86_64-linux";
-              #     config.allowUnfree = true;
-              #   };
-              # };
+              extraSpecialArgs = {
+                pkgs-unstable = import inputs.nixpkgs-unstable {
+                  system = "x86_64-linux";
+                  config.allowUnfree = true;
+                };
+              };
 
               # User profiles
               users.bert = import ../home/profiles/bert;

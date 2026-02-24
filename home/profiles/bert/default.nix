@@ -19,8 +19,13 @@
   ];
 
   imports = [
+    # Terminal/Shells
     ../../terminal/ghostty.nix
     ../../shell/zsh.nix
+
+
+    ## Programs
+    ../../apps/obsidian.nix
   ];
 
 
