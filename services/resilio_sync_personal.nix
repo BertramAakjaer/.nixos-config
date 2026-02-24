@@ -5,14 +5,12 @@
 
     enableWebUI = true;
     deviceName = config.networking.hostName;
-
-    directoryRoot = "/home/bert/sync";
-    storagePath = "/home/bert/.config/resilio-sync";
-
   };
 
-  systemd.services.resilio.serviceConfig = {
-    User = lib.mkForce "bert";
-    group = lib.mkForce "users";
-  };
+  # systemd.services.resilio.serviceConfig = {
+  #   User = lib.mkForce "bert";
+  #   group = lib.mkForce "users";
+  #   ProtectHome = lib.mkForce false;
+  #   ReadWritePaths = [ "/home/bert/.config/resilio-sync" ];
+  # };
 }
