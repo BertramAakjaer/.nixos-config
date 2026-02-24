@@ -31,8 +31,8 @@
   environment.gnome.excludePackages = with pkgs; [
     gnome-tour
     gnome-user-docs
-    #gnome-terminal
-    #nautilus
+    gnome-terminal
+    #nautilus 
   ];
 
 }

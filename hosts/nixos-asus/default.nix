@@ -8,7 +8,6 @@
       ../../system/bootloaders/grub.nix
       ../../system/audio.nix
 
-      ## Gnome
       ../../system/desktopManagers/gnome.nix
 
       ../../services/resilio_sync_personal.nix

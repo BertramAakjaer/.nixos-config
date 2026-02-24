@@ -19,9 +19,7 @@
   ];
 
   imports = [
-    ../../fileExplorer/nemo.nix
-
-    ../../system/terminal/ghostty.nix
+    ../../terminal/ghostty.nix
     ../../shell/zsh.nix
   ];
 
