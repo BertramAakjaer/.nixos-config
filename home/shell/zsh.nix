@@ -10,7 +10,8 @@
     shellAliases = {
       ll = "ls -l";
       lll = "ls -a";
-      byg-asus = "sudo nixos-rebuild switch --flake /home/bert/.nixos-config/#nixos-asus";
+      byg-asus = "cd ~/.nixos-config && git add . && sudo nixos-rebuild switch --flake .#nixos-asus && git add flake.lock";
+      byg-asus-update = "cd ~/.nixos-config && nix flake update && git add . && sudo nixos-rebuild switch --flake .#nixos-asus && git add flake.lock";
       ".." = "cd ..";
     };
   };
