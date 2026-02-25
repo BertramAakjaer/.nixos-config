@@ -22,42 +22,28 @@
 
   services.xserver.desktopManager.xterm.enable = false;
 
-  environment.gnome.excludePackages = with pkgs; [
-    baobab # disk usage analyzer
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-photos
+    gnome-tour
+    cheese # webcam tool
+    gnome-music
+    gedit # text editor
     epiphany # web browser
-    evince # document viewer
-    geary # email client
-    totem # video player
-    yelp # help viewer
-    gnome-tour # welcome tour
-    gnome-user-docs # help documentation
-    gnome-text-editor # default text editor
-    gnome-calendar # calendar
-    gnome-characters # character map
-    gnome-clocks # clocks
-    gnome-contacts # contacts
-    gnome-font-viewer # font viewer
-    gnome-logs # system logs
-    gnome-maps # maps
-    gnome-music # music player
-    gnome-weather # weather app
-    gnome-connections # remote desktop client
-    loupe # image viewer (replaced eog)
-    snapshot # camera app (replaced cheese)
-    simple-scan # document scanner
-    gnome-console # Console
-    system-config-printer # Manage Printing
-    rhythmbox # Audio player (older GNOME default)
-    gnome-music # Audio player (newer GNOME default)
-    totem # Video player
-    evince # Document viewer
-  ];
+    geary # email reader
+    gnome-characters
+    tali # poker game
+    iagno # go game
+    hitori # sudoku game
+    atomix # puzzle game
+    yelp # Help view
+    gnome-contacts
+    gnome-initial-setup
+  ]);
 
-  # Add back the few specific tools you actually want
+
+  programs.dconf.enable = true;
+
   environment.systemPackages = with pkgs; [
-    nautilus
-    gnome-calculator
-    gnome-system-monitor
-    gnome-terminal
+    gnome-tweaks
   ];
 }
