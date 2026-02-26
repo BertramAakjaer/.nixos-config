@@ -46,4 +46,4 @@
   environment.systemPackages = with pkgs; [
     gnome-tweaks
   ];
-}
+} # https://determinate.systems/blog/declarative-gnome-configuration-with-nixos/

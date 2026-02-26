@@ -4,9 +4,9 @@
     enable = true;
 
     enableWebUI = true;
-    deviceName = config.networking.hostName;
     httpListenAddr = "127.0.0.1";
     httpListenPort = 8888;
+    checkForUpdates = false;
 
     # So the reislio with user perms can access it
     storagePath = "/home/bert/.config/resilio-sync";
