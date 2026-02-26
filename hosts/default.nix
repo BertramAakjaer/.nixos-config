@@ -16,6 +16,7 @@
           inputs.home-manager.nixosModules.home-manager
           {
             home-manager = {
+
               useGlobalPkgs = true;
               useUserPackages = true;
 
@@ -28,7 +29,6 @@
 
               # User profiles
               users.bert = import ../home/profiles/bert;
-
               backupFileExtension = "backup";
             };
           }
