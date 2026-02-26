@@ -22,6 +22,7 @@
     # Terminal/Shells
     ../../terminal/ghostty.nix
     ../../shell/zsh.nix
+    ../../tools/direnv.nix
 
 
     ## Programs
@@ -47,7 +48,6 @@
         };
       };
       firefox.enable = true;
-      direnv.enable = true;
     };
 
 

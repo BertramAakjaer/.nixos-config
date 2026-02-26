@@ -14,8 +14,8 @@
 
 
       # Machines update comments
-      byg-asus = "cd ~/.nixos-config && git add . && sudo nixos-rebuild switch --flake .#nixos-asus && git add flake.lock";
-      byg-asus-update = "cd ~/.nixos-config && nix flake update && git add . && sudo nixos-rebuild switch --flake .#nixos-asus && git add flake.lock";
+      byg-asus = "cd ~/.nixos-config && git add -A && sudo nixos-rebuild switch --flake .#nixos-asus && git add flake.lock";
+      byg-asus-update = "cd ~/.nixos-config && git add -A && nix flake update && git add -A && sudo nixos-rebuild switch --flake .#nixos-asus && git add flake.lock";
     };
   };
 
