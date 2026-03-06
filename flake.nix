@@ -5,7 +5,7 @@
     systems.url = "github:nix-systems/default-linux";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
 
-    stylix.url = "github:danth/stylix";
+    stylix.url = "github:danth/stylix/release-25.11";
 
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable"; # Not used yet
 

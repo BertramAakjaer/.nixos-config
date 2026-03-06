@@ -14,6 +14,8 @@
 
       ../../services/resilio_sync_personal.nix
 
+      # theme
+      ../../themes/original.nix
     ];
 
 
@@ -27,9 +29,7 @@
   services.printing.enable = true;
 
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-  ];
+  fonts.packages = with pkgs; [ ]; # Fonts
 
   # users
   users.users = {

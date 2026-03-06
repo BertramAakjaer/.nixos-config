@@ -45,5 +45,7 @@
 
   environment.systemPackages = with pkgs; [
     gnome-tweaks
+    gnome-extensions-cli # Useful for debugging
+    gnome-shell-extensions
   ];
 } # https://determinate.systems/blog/declarative-gnome-configuration-with-nixos/

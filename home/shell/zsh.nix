@@ -21,7 +21,9 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
+
+    settings = builtins.fromTOML (builtins.readFile ../../dotfiles/starship.toml); # So starship config and stylix work together
   };
 
-  xdg.configFile."starship.toml".source = ../../dotfiles/starship.toml;
+  #xdg.configFile."starship.toml".source = ../../dotfiles/starship.toml;
 }
