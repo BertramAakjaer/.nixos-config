@@ -2,7 +2,7 @@
 {
   # User packages
   home.packages = with pkgs; [
-    lf
+    yazi
     ripgrep
     wget
     curl

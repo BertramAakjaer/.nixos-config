@@ -1,9 +1,11 @@
 { config, pkgs, lib, ... }: {
+  networking.hostName = "nixos-asus"; # Define your hostname.
+
+
   imports =
     [
       ./hardware-configuration.nix
       ../../system/core.nix
-
 
       ../../system/bootloaders/grub.nix
       ../../system/audio.nix
@@ -20,7 +22,6 @@
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
 
-  networking.hostName = "nixos-asus"; # Define your hostname.
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -31,10 +32,12 @@
   ];
 
   # users
-  users.users.bert = {
-    isNormalUser = true;
-    description = "Bertram Aakjær";
-    extraGroups = [ "networkmanager" "wheel" ];
+  users.users = {
+    bert = {
+      isNormalUser = true;
+      description = "Bertram Aakjær";
+      extraGroups = [ "networkmanager" "wheel" ];
+    };
   };
 
 

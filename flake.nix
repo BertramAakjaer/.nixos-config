@@ -4,7 +4,10 @@
   inputs = {
     systems.url = "github:nix-systems/default-linux";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    stylix.url = "github:danth/stylix";
+
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable"; # Not used yet
 
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";

@@ -13,10 +13,11 @@
 
         modules = [
           ./nixos-asus # Your system settings
+          inputs.stylix.nixosModules.stylix
           inputs.home-manager.nixosModules.home-manager
+
           {
             home-manager = {
-
               useGlobalPkgs = true;
               useUserPackages = true;
 

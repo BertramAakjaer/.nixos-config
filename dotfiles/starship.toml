@@ -1,0 +1,7 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Kali like Terminal
+[character]
+success_symbol = '[└─ \$](bold blue)'
+error_symbol = '[└─ \$](bold red)'
