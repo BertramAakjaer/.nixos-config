@@ -48,6 +48,17 @@
   # $ nix run nixpkgs#eza -- --tree --level 3
 
   #
+  # Icons
+  #
+
+  stylix.iconTheme = {
+    enable = true;
+    package = pkgs.papirus-icon-theme;
+    dark = "Papirus-Dark";
+    light = "Papirus-Light";
+  };
+
+  #
   # Fonts
   #
 

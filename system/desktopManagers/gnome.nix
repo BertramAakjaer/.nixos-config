@@ -28,7 +28,6 @@
     gnome-connections
     gnome-console
     gnome-text-editor
-    gnome-characters
     gnome-contacts
     gnome-initial-setup
 
@@ -51,10 +50,20 @@
   programs.dconf.enable = true;
 
   environment.systemPackages = with pkgs; [
-    gnome-tweaks
+
     gnome-extensions-cli # Useful for debugging
     gnome-shell-extensions
 
     nautilus # file manager
+
+    # Customization
+    gnome-characters
+    gnome-tweaks
+
+    gnomeExtensions.appindicator
+    gnomeExtensions.vitals
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.clipboard-indicator
+
   ];
 }
