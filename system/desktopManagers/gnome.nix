@@ -48,6 +48,7 @@
 
 
   programs.dconf.enable = true;
+  services.udev.packages = with pkgs; [ gnome-settings-daemon ];
 
   environment.systemPackages = with pkgs; [
 
@@ -55,10 +56,12 @@
     gnome-shell-extensions
 
     nautilus # file manager
+    gnome-system-monitor
 
     # Customization
     gnome-characters
     gnome-tweaks
+    libappindicator
 
     gnomeExtensions.appindicator
     gnomeExtensions.vitals
