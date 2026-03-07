@@ -17,28 +17,35 @@
 
   services.gnome = {
     core-developer-tools.enable = false;
+    core-apps.enable = false;
     games.enable = false;
   };
 
-  services.xserver.desktopManager.xterm.enable = false;
 
-  environment.gnome.excludePackages = (with pkgs; [
+  environment.gnome.excludePackages = with pkgs; [
     gnome-photos
     gnome-tour
-    cheese # webcam tool
-    gnome-music
-    gedit # text editor
-    epiphany # web browser
-    geary # email reader
+    gnome-connections
+    gnome-console
+    gnome-text-editor
     gnome-characters
-    tali # poker game
-    iagno # go game
-    hitori # sudoku game
-    atomix # puzzle game
-    yelp # Help view
     gnome-contacts
     gnome-initial-setup
-  ]);
+
+    cheese # webcam
+    epiphany # browser
+    geary # email
+    evince # document viewer
+    totem # video player
+    yelp # help
+
+    tali
+    iagno
+    hitori
+    atomix
+  ];
+
+  services.xserver.desktopManager.xterm.enable = false;
 
 
   programs.dconf.enable = true;
@@ -47,5 +54,7 @@
     gnome-tweaks
     gnome-extensions-cli # Useful for debugging
     gnome-shell-extensions
+
+    nautilus # file manager
   ];
-} # https://determinate.systems/blog/declarative-gnome-configuration-with-nixos/
+}

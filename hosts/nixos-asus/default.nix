@@ -13,6 +13,7 @@
       ../../system/desktopManagers/gnome.nix
 
       ../../services/resilio_sync_personal.nix
+      ../../services/tailscale.nix
 
       # theme
       ../../themes/original.nix

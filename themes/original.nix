@@ -15,7 +15,7 @@
   # General Color
   #
 
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/brewer.yaml";
   # Find themes with:
   # $ nix build nixpkgs#base16-schemes
   # $ cd result
